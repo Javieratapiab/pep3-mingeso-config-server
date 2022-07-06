@@ -19,10 +19,11 @@ spring:
       globalcors:
         corsConfigurations:
           '[/*]':
-            allowedOrigins: ""
+            allowedOrigins: "*"
             allowedHeaders: "*"
             allowedMethods:
               - GET
+              - POST
       routes:
         - id: producto-service
           uri: lb://producto-service
